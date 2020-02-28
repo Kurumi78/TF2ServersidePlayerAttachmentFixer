@@ -1,5 +1,5 @@
 # TF2ServersidePlayerAttachmentFixer
-Stops the engine from rendering entities parented to a player invisible, i.e. custom wearable models and such.
+Stops the engine from rendering entities parented to a player invisible, i.e. custom wearable models and such. This plugin was based around [an older version of a similar plugin created by MasterXykon](https://pastebin.com/jYF9XJFg), only without a hundred different `if` statements.
 
 ## Usage Instructions
 Simple enough to use. Run the SMX and forget about it. It checks every entity that gets created for the `m_bValidatedAttachedEntity` netprop and if it finds it, sets its value to `1`. This is how Valve went about breaking serverside player attachments back in 2010. They just added the netprop, and set the engine up to change the rendering of a parented entity to invisible if the value of the netprop was `0`. That's why for most cases, custom weapon and hat models are invisible to other players. If you've noticed a server where custom weapon or hat models are being used and ***can*** be seen by other players, this is how.
