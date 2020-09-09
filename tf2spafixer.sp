@@ -9,10 +9,9 @@
 
 public Plugin myinfo = {
 	name = "[TF2] Serverside Player Attachment Fixer",
-	author = "404UNF",
+	author = "NiagaraDryGuy",
 	description = "Fixes the engine rendering entities attached to players invisible",
-	version = PLUGIN_VERSION,
-	url = "http://www.404UNF.ca"
+	version = PLUGIN_VERSION
 };
 
 public void OnPluginStart()
@@ -24,6 +23,10 @@ public void OnEntityCreated(int iEntity, const char[] strClassname)
 {
     if (IsValidEntity(iEntity) && HasEntProp(iEntity, Prop_Send, "m_bValidatedAttachedEntity"))
     {
-		SetEntProp(iEntity, Prop_Send, "m_bValidatedAttachedEntity", 1);
+    	// If it's already set to 1, don't bother fucking with it.
+    	if (GetEntProp(iEntity, Prop_Send, "m_bValidatedAttachedEntity") != 0) return;
+	
+	// Hey, yeah, Source Engine, let's not fuck with visibility thanks.
+	SetEntProp(iEntity, Prop_Send, "m_bValidatedAttachedEntity", 1);
     }
 }
