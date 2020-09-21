@@ -15,3 +15,7 @@ For example, Skial uses it for their "!items" system that allows you to equip an
 TF2 servers have not suffered any GLST token bans in many years. ~~Even CS:GO servers, which were frequently hit by GLST token bans for using fake knife/gun/etc skin plugins, have slowly over time stopped being hit by GLST token bans. It seems Valve has either lightened up on former community "restrictions", or they're too busy with HL:A to notice.~~ lmao nevermind, seems they just banned the GLST tokens of someone in our community who was generating them en masse. Be careful if you choose to use this fucker as Valve could rear their heads towards Team Fortress 2 next. Especially be careful if you're a group like Skial that abuses this netprop.
 
 ***Basically, by using this plugin, you are acknowledging that there is still the possibility that Valve could come around one day and blacklist your server. Don't blame me if such a thing happens either.***
+
+## Things not to do
+Don't be like this idiot who modified the plugin version output of the plugin to use the n word so it'd show up on the plugin stats page.
+![Example of how to be a fucking idiot](https://i.ibb.co/wCt1kkD/Screenshot-20200921-010311-Samsung-Internet.jpg)
